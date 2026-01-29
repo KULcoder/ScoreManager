@@ -1,10 +1,3 @@
-Nice timing — this is exactly the moment to set the tone of the repo.
-Below is a **clean, professional README** that fits your project scope, your tech choices, and clearly signals *“under construction”* without sounding messy or unfinished.
-
-You can copy-paste this directly into `README.md`.
-
----
-
 # Score Manager 🎯
 
 > 🚧 **Under Construction** — This project is actively being designed and developed.
