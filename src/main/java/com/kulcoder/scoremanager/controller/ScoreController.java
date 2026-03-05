@@ -22,8 +22,8 @@ public class ScoreController {
 
     private final ScoreService scoreService;
 
-    public ScoreController(ScoreService scoreService) {
-        this.scoreService = scoreService;
+    public ScoreController(ScoreService newScoreService) {
+        this.scoreService = newScoreService;
     }
 
     @PostMapping("/{playerId}")
