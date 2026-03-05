@@ -22,32 +22,32 @@ public class PlayerScore {
     public PlayerScore() {
     }
 
-    public PlayerScore(String playerId, int score) {
-        this.playerId = playerId;
-        this.score = score;
+    public PlayerScore(String newPlayerId, int newScore) {
+        this.playerId = newPlayerId;
+        this.score = newScore;
     }
 
     public String getPlayerId() {
         return playerId;
     }
 
-    public void setPlayerId(String playerId) {
-        this.playerId = playerId;
+    public void setPlayerId(String newPlayerId) {
+        this.playerId = newPlayerId;
     }
 
     public int getScore() {
         return score;
     }
 
-    public void setScore(int score) {
-        this.score = score;
+    public void setScore(int newScore) {
+        this.score = newScore;
     }
 
     public ZonedDateTime getUpdatedAt() {
         return updatedAt;
     }
 
-    public void setUpdatedAt(ZonedDateTime updatedAt) {
-        this.updatedAt = updatedAt;
+    public void setUpdatedAt(ZonedDateTime newUpdatedAt) {
+        this.updatedAt = newUpdatedAt;
     }
 }

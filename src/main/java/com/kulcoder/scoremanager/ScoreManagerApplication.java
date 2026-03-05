@@ -6,6 +6,9 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication
 public class ScoreManagerApplication {
 
+    // Add this to satisfy Checkstyle
+    private ScoreManagerApplication() {}
+
     public static void main(String[] args) {
         SpringApplication.run(ScoreManagerApplication.class, args);
     }

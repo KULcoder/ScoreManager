@@ -19,7 +19,7 @@ public interface PlayerScoreRepository extends JpaRepository<PlayerScore, String
         ON CONFLICT (player_id) DO UPDATE 
         SET score = EXCLUDED.score, updated_at = CURRENT_TIMESTAMP 
         WHERE EXCLUDED.score > player_scores.score
-        """, nativeQuery = true)
+            """, nativeQuery = true)
     void upsertHighestScore(@Param("playerId") String playerId, @Param("score") int score);
 
     // 2. Leaderboard
@@ -45,6 +45,6 @@ public interface PlayerScoreRepository extends JpaRepository<PlayerScore, String
         ) AS combined
         ORDER BY ABS(combined.score - :targetScore) ASC
         LIMIT :limit
-        """, nativeQuery = true)
+            """, nativeQuery = true)
     List<PlayerScore> getClosestMatches(@Param("targetScore") int targetScore, @Param("targetId") String targetId, @Param("limit") int limit);
 }
