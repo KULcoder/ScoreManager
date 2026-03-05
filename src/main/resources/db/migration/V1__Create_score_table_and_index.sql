@@ -1,3 +1,4 @@
+-- V1__Create_score_table_and_index.sql
 CREATE TABLE player_scores (
                                player_id VARCHAR(50) PRIMARY KEY,
                                score INT NOT NULL,
